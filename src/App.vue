@@ -2,9 +2,13 @@
   <div id="app">
     <b-container fluid class="bv-example-row">
   <b-row>
-    <b-col col lg="4"><Menu/></b-col>
+    <b-col col lg="4">
+      <LeftMenu/>
+      </b-col>
 
-    <b-col><Page/></b-col>
+    <b-col>
+      <Page/>
+      </b-col>
 
   </b-row>
 </b-container>
@@ -13,7 +17,7 @@
 
 <script>
 import Page from './components/page.vue'
-import Menu from './components/menu.vue'
+import LeftMenu from './components/leftMenu.vue'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -23,7 +27,7 @@ export default {
   name: 'app',
   components: {
     Page,
-    Menu
+    LeftMenu
   }
 }
 </script>
