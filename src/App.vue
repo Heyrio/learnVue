@@ -1,17 +1,28 @@
 <template>
   <div id="app">
-    <Menu/>
-    <HelloWorld/>
+    <b-container fluid class="bv-example-row">
+  <b-row>
+    <b-col col lg="4"><Menu/></b-col>
+
+    <b-col><Page/></b-col>
+
+  </b-row>
+</b-container>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Page from './components/page.vue'
 import Menu from './components/menu.vue'
+
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+
 export default {
   name: 'app',
   components: {
-    HelloWorld,
+    Page,
     Menu
   }
 }
@@ -24,6 +35,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

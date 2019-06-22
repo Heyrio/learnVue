@@ -1,5 +1,9 @@
 <template>
-<h1>This is coming from the menu</h1>
+<div class="box">
+ MENU
+
+</div>
+
 </template>
 
 <script>
@@ -8,3 +12,12 @@ export default {
 
 }
 </script>
+
+<style>
+.box{
+    border: 1px solid black;
+    margin: 0;
+    height: 100vh;
+    
+}
+</style>
