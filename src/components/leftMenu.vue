@@ -5,28 +5,34 @@
     </div>
     <div>
         <button @click="timer" class="btn btn-primary">Start</button>
-        <button class="btn btn-danger">Reset</button>
+        <button @click="reset" class="btn btn-danger">Reset</button>
     </div>
 </div>
 
 </template>
 
 <script>
+
 export default {
     name: 'leftMenu',
      data: function() {
          return  {
-           time: 0
+           time: 0,
          }
     },
     methods: {
-     timer(){
-         setInterval(()=>{
-            this.time = this.time + 1;
-            console.log(this.time);
+     timer: function(){
+            setInterval(()=>{
+                this.time++
+            
          }, 1000)
-         
-     }
+
+     },
+      reset(){
+        this.time = 0;
+       
+        
+    }
 }
 }
 

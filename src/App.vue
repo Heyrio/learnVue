@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <b-container fluid class="bv-example-row">
+    <b-container fluid>
   <b-row>
     <b-col col lg="4">
       <LeftMenu/>
